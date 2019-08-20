@@ -6,7 +6,11 @@
 
     <groupId>com.vcvinci</groupId>
     <artifactId>example</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>netty_example</module>
+    </modules>
 
     <dependencies>
         <dependency>
