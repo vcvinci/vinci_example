@@ -1,4 +1,4 @@
-package com.vcvinci.java8;
+package com.vcvinci;
 
 import java.util.Arrays;
 import java.util.List;

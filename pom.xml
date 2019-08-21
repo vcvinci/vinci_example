@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>netty_example</module>
+        <module>java8InAction</module>
     </modules>
 
     <dependencies>

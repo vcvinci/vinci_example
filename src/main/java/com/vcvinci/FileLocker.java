@@ -1,4 +1,4 @@
-package com.vcvinci.java8;
+package com.vcvinci;
 
 import java.io.BufferedReader;
 import java.io.File;
