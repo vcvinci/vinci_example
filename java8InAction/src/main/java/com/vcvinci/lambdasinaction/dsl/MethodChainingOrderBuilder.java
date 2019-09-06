@@ -16,9 +16,9 @@
 
 package com.vcvinci.lambdasinaction.dsl;
 
-import lambdasinaction.dsl.model.Order;
-import lambdasinaction.dsl.model.Stock;
-import lambdasinaction.dsl.model.Trade;
+import com.vcvinci.lambdasinaction.dsl.model.Order;
+import com.vcvinci.lambdasinaction.dsl.model.Stock;
+import com.vcvinci.lambdasinaction.dsl.model.Trade;
 
 public class MethodChainingOrderBuilder {
 

@@ -1,7 +1,7 @@
 package com.vcvinci.lambdasinaction.chap11;
 
-import static lambdasinaction.chap11.Util.delay;
-import static lambdasinaction.chap11.Util.format;
+import static com.vcvinci.lambdasinaction.chap11.Util.delay;
+import static com.vcvinci.lambdasinaction.chap11.Util.format;
 
 public class Discount {
 

@@ -16,11 +16,12 @@ public class OptionalMain {
     }
 
     public Set<String> getCarInsuranceNames(List<Person> persons) {
-        return persons.stream()
+        /*return persons.stream()
                       .map(Person::getCar)
                       .map(optCar -> optCar.flatMap(Car::getInsurance))
                       .map(optInsurance -> optInsurance.map(Insurance::getName))
                       .flatMap(Optional::stream)
-                      .collect(toSet());
+                      .collect(toSet());*/
+        return null;
     }
 }

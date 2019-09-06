@@ -1,7 +1,8 @@
 package com.vcvinci.lambdasinaction.chap11.v1;
 
-import lambdasinaction.chap11.ExchangeService;
-import lambdasinaction.chap11.ExchangeService.Money;
+import com.vcvinci.lambdasinaction.chap11.ExchangeService;
+import com.vcvinci.lambdasinaction.chap11.ExchangeService;
+import com.vcvinci.lambdasinaction.chap11.ExchangeService.Money;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,7 +71,7 @@ public class BestPriceFinder {
                 CompletableFuture.supplyAsync(() -> shop.getPrice(product))
                 .thenCombine(
                     CompletableFuture.supplyAsync(
-                        () ->  ExchangeService.getRate(Money.EUR, Money.USD)),
+                        () ->  ExchangeService.getRate(ExchangeService.Money.EUR, ExchangeService.Money.USD)),
                     (price, rate) -> price * rate
                 );
             priceFutures.add(futurePriceInUSD);
@@ -90,11 +91,13 @@ public class BestPriceFinder {
         List<Future<Double>> priceFutures = new ArrayList<>();
         for (Shop shop : shops) {
             final Future<Double> futureRate = executor.submit(new Callable<Double>() { 
+                @Override
                 public Double call() {
-                    return ExchangeService.getRate(Money.EUR, Money.USD);
+                    return ExchangeService.getRate(ExchangeService.Money.EUR, ExchangeService.Money.USD);
                 }
             });
             Future<Double> futurePriceInUSD = executor.submit(new Callable<Double>() { 
+                @Override
                 public Double call() {
                     try {
                         double priceInEUR = shop.getPrice(product);
@@ -128,7 +131,7 @@ public class BestPriceFinder {
                 CompletableFuture.supplyAsync(() -> shop.getPrice(product))
                 .thenCombine(
                     CompletableFuture.supplyAsync(
-                        () -> ExchangeService.getRate(Money.EUR, Money.USD)),
+                        () -> ExchangeService.getRate(ExchangeService.Money.EUR, ExchangeService.Money.USD)),
                     (price, rate) -> price * rate
                 ).thenApply(price -> shop.getName() + " price is " + price);
             priceFutures.add(futurePriceInUSD);
@@ -147,7 +150,7 @@ public class BestPriceFinder {
             .map(shop -> CompletableFuture
                 .supplyAsync(() -> shop.getPrice(product))
                 .thenCombine(
-                    CompletableFuture.supplyAsync(() -> ExchangeService.getRate(Money.EUR, Money.USD)),
+                    CompletableFuture.supplyAsync(() -> ExchangeService.getRate(ExchangeService.Money.EUR, ExchangeService.Money.USD)),
                     (price, rate) -> price * rate)
                 .thenApply(price -> shop.getName() + " price is " + price));
         // However, we should gather the CompletableFutures into a List so that the asynchronous

@@ -1,6 +1,6 @@
 package com.vcvinci.lambdasinaction.chap11;
 
-import static lambdasinaction.chap11.Util.delay;
+import static com.vcvinci.lambdasinaction.chap11.Util.delay;
 
 public class ExchangeService {
 

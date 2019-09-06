@@ -10,7 +10,7 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.reducing;
 import static java.util.stream.Collectors.summarizingInt;
 import static java.util.stream.Collectors.summingInt;
-import static lambdasinaction.chap6.Dish.menu;
+import static com.vcvinci.lambdasinaction.chap6.Dish.menu;
 
 public class Summarizing {
 

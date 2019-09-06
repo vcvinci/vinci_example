@@ -1,6 +1,6 @@
 package com.vcvinci.lambdasinaction.chap5;
 
-import lambdasinaction.chap4.*;
+import com.vcvinci.lambdasinaction.chap4.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.OptionalInt;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static lambdasinaction.chap4.Dish.menu;
+import static com.vcvinci.lambdasinaction.chap4.Dish.menu;
 
 public class NumericStreams{
 

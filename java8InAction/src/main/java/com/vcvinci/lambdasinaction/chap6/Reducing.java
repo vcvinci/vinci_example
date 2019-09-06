@@ -1,7 +1,7 @@
 package com.vcvinci.lambdasinaction.chap6;
 
 import static java.util.stream.Collectors.reducing;
-import static lambdasinaction.chap6.Dish.menu;
+import static com.vcvinci.lambdasinaction.chap6.Dish.menu;
 
 public class Reducing {
 

@@ -4,7 +4,7 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 import java.util.stream.LongStream;
 
-import static lambdasinaction.chap7.ParallelStreamsHarness.FORK_JOIN_POOL;
+import static com.vcvinci.lambdasinaction.chap7.ParallelStreamsHarness.FORK_JOIN_POOL;
 
 public class ForkJoinSumCalculator extends RecursiveTask<Long> {
 

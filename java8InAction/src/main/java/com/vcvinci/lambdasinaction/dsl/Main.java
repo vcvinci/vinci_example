@@ -16,18 +16,17 @@
 
 package com.vcvinci.lambdasinaction.dsl;
 
-import lambdasinaction.dsl.model.Order;
-import lambdasinaction.dsl.model.Stock;
-import lambdasinaction.dsl.model.Trade;
+import com.vcvinci.lambdasinaction.dsl.model.Order;
+import com.vcvinci.lambdasinaction.dsl.model.Stock;
+import com.vcvinci.lambdasinaction.dsl.model.Trade;
 
-import static lambdasinaction.dsl.MethodChainingOrderBuilder.forCustomer;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.*;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.at;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.buy;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.on;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.order;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.sell;
-import static lambdasinaction.dsl.NestedFunctionOrderBuilder.stock;
+import static com.vcvinci.lambdasinaction.dsl.MethodChainingOrderBuilder.forCustomer;
+import static com.vcvinci.lambdasinaction.dsl.NestedFunctionOrderBuilder.at;
+import static com.vcvinci.lambdasinaction.dsl.NestedFunctionOrderBuilder.buy;
+import static com.vcvinci.lambdasinaction.dsl.NestedFunctionOrderBuilder.on;
+import static com.vcvinci.lambdasinaction.dsl.NestedFunctionOrderBuilder.order;
+import static com.vcvinci.lambdasinaction.dsl.NestedFunctionOrderBuilder.sell;
+import static com.vcvinci.lambdasinaction.dsl.NestedFunctionOrderBuilder.stock;
 
 public class Main {
 

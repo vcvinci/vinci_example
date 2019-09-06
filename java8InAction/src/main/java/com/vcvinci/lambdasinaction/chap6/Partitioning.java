@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.maxBy;
 import static java.util.stream.Collectors.partitioningBy;
-import static lambdasinaction.chap6.Dish.menu;
+import static com.vcvinci.lambdasinaction.chap6.Dish.menu;
 
 public class Partitioning {
 

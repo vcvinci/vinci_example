@@ -16,8 +16,8 @@
 
 package com.vcvinci.lambdasinaction.dsl;
 
-import lambdasinaction.dsl.model.Order;
-import lambdasinaction.dsl.model.Tax;
+import com.vcvinci.lambdasinaction.dsl.model.Order;
+import com.vcvinci.lambdasinaction.dsl.model.Tax;
 
 import java.util.function.Function;
 

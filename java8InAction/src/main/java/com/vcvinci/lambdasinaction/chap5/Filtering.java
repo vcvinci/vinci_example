@@ -1,12 +1,12 @@
 package com.vcvinci.lambdasinaction.chap5;
 
-import lambdasinaction.chap4.*;
+import com.vcvinci.lambdasinaction.chap4.*;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
-import static lambdasinaction.chap4.Dish.menu;
+import static com.vcvinci.lambdasinaction.chap4.Dish.menu;
 
 public class Filtering{
 

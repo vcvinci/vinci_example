@@ -30,6 +30,7 @@ public class StreamBasic {
         }
         List<String> lowCaloricDishesName = new ArrayList<>();
         Collections.sort(lowCaloricDishes, new Comparator<Dish>() {
+            @Override
             public int compare(Dish d1, Dish d2){
                 return Integer.compare(d1.getCalories(), d2.getCalories());
             }
